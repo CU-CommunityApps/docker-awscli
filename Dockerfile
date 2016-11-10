@@ -7,7 +7,7 @@ MAINTAINER Shawn Bower <shawn.bower@gmail.com>
 # Install python and pip
 RUN \
   apt-get update && \
-  apt-get install -y  python python-pip && \
+  apt-get install -y  python python-pip jq && \
   rm -rf /var/lib/apt/lists/*
 
 # Install AWS CLI tools
